@@ -2,16 +2,16 @@
 
 function diceRoll()
 {
-roll=$((RANDOM%6+1))
-echo "$roll"
+	roll=$((RANDOM%6+1))
+	echo "$roll"
 }
 
+numberofPlayer=1
 position=0
 endPosition=100
+startPosition=0
 
-while [ $position -ne $endPosition ]
-do 
-	rollingDice="$( diceRoll )"
+echo "welcome to snake and ladder"
 
-	position=$(( $position +$rollingDice )) 
-done
+diceRoll
+
